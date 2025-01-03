@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "tsc -b && node dist/index.js",
-    "build": "tsc -b",
+    "build": "npx prisma generate && tsc -b && node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
